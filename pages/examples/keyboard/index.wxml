@@ -1,0 +1,7 @@
+<sc-keyboard id="sc-keyboard" show="{{show}}"  bindonConfirm="onConfirm" />
+<demo-block title="键盘" padding>
+
+      <sc-button bind:click="open" type="ghost" custom-class="demo-margin-right">打开键盘</sc-button>
+
+
+</demo-block>

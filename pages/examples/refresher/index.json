@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Refresher",
+    "usingComponents": {
+        "sc-refresher": "../../../components/refresher/index",
+                "sc-panel": "../../../components/panel/index"
+    }
+}

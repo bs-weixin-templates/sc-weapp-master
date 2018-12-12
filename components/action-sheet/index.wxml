@@ -1,0 +1,39 @@
+<sc-popup
+  show="{{ show }}"
+  overlay="{{ overlay }}"
+  close-on-click-overlay="{{ closeOnClickOverlay }}"
+  custom-class="sc-action-sheet {{ title ? 'sc-action-sheet-withtitle' : '' }}"
+  position="bottom"
+  bind:close="onClose"
+>
+  <view wx:if="{{ title }}" class="sc-hairline-top-bottom sc-action-sheet-header">
+    <sc-icon custom-class="sc-action-sheet-close" name="close" bind:tap="onClose" style="float:left;padding-left:10px;" />
+    <view style="padding-right:10px;">{{ title }}</view>
+  </view>
+  <view wx:else class="sc-hairline-bottom">
+    <button
+      wx:for="{{ actions }}"
+      wx:key="index"
+      open-type="{{ item.openType }}"
+      class="sc-action-sheet-item sc-hairline-top {{ item.disabled || item.loading ? 'sc-action-sheet-item-disabled' : '' }} {{ item.className || '' }}"
+      data-index="{{ index }}
+      bind:tap="onSelect"
+    >
+      <block wx:if="{{ !item.loading }}">
+        <view class="sc-action-sheet-name">{{ item.name }}</view>
+        <view class="sc-action-sheet-subname" wx:if="{{ item.subname }}">{{ item.subname }}</view>
+      </block>
+      <sc-loading wx:else custom-class="sc-action-sheet-loading" size="20px" />
+    </button>
+  </view>
+  <view
+    wx:if="{{ cancelText }}"
+    class="sc-action-sheet-cancel sc-hairline-top"
+    bind:tap="onCancel"
+  >
+    {{ cancelText }}
+  </view>
+  <view wx:else class="sc-action-sheet-content">
+    <slot />
+  </view>
+</sc-popup>

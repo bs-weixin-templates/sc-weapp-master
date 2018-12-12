@@ -1,0 +1,54 @@
+@import '../styles/index.less';
+@import '../styles/mixins/hairline.less';
+.sc-tag {
+  display: inline-block;
+  padding: 2px 5px;
+  line-height: normal;
+  border-radius: 3px;
+  font-size: 10px;
+  background: @sc-gray;
+  color: @sc-white;
+
+  &::after {
+    border-color: currentColor;
+    border-radius: 4px;
+  }
+
+  &-mark {
+    padding-right: 7px;
+    border-radius: 0 8px 8px 0;
+
+    &::after {
+      border-radius: 0 16px 16px 0;
+    }
+  }
+
+  &-success {
+    background: @sc-green;
+
+    &.sc-tag-plain {
+      color: @sc-green;
+    }
+  }
+
+  &-danger {
+    background: @sc-btn-danger-bg;
+
+    &.sc-tag-plain {
+      color: @sc-btn-danger-bg;
+    }
+  }
+
+  &-primary {
+    background: @sc-blue;
+
+    &.sc-tag-plain {
+      color: @sc-blue;
+    }
+  }
+
+  &-plain {
+    background: @sc-white;
+    color: @sc-gray;
+  }
+}

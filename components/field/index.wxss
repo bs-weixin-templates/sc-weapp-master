@@ -1,0 +1,76 @@
+.sc-field-body {
+  display: flex;
+  align-items: center;
+}
+.sc-field-body-textarea {
+  min-height: 24px;
+}
+.sc-field-control {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  display: block;
+  text-align: left;
+  box-sizing: border-box;
+  line-height: inherit;
+  background-color: transparent;
+  padding-left: 10px;
+  width: 100%;
+  min-height: 47px;
+  font-size: 17px;
+}
+.sc-field-control-disabled {
+  opacity: 1;
+  color: #666;
+  background-color: transparent;
+}
+.sc-field-control-center {
+  text-align: center;
+}
+.sc-field-control-right {
+  text-align: right;
+}
+.sc-field-clear,
+.sc-field-icon-container,
+.sc-field-button {
+  flex-shrink: 0;
+}
+.sc-field-clear,
+.sc-field-icon-container {
+  padding: 0 10px;
+  line-height: inherit;
+  margin-right: -10px;
+  vertical-align: middle;
+}
+.sc-field-clear {
+  color: #c9c9c9;
+}
+.sc-field-icon-container {
+  color: #999;
+}
+.sc-field-icon {
+  display: block;
+  font-size: 16px;
+  line-height: inherit;
+}
+.sc-field-error-message {
+  color: #f44;
+  font-size: 12px;
+  text-align: left;
+}
+.sc-field-error {
+  color: #f44;
+}
+.sc-field-label-center .sc-cell-title {
+  text-align: center;
+}
+.sc-field-label-right .sc-cell-title {
+  text-align: right;
+}
+.sc-field-password {
+  color: grey;
+  position: absolute;
+  top: 30%;
+  letter-spacing: 1px;
+}

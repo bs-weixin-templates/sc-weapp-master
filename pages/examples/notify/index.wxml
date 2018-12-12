@@ -1,0 +1,11 @@
+<demo-block padding title="基础用法">
+  <sc-button bind:click="showNotify">显示消息通知</sc-button>
+</demo-block>
+
+<demo-block padding title="自定义配置">
+  <sc-button bind:click="showNotify2">显示自定义消息通知</sc-button>
+</demo-block>
+
+<sc-notify id="sc-notify" />
+<sc-notify id="custom-selector" />
+ 

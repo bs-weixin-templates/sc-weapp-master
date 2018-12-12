@@ -1,0 +1,15 @@
+<sc-panel title="group-水果">
+    <sc-radio-group current="{{current}}" bindchange="handleFruitChange">
+        <sc-radio wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </sc-radio>
+    </sc-radio-group>
+</sc-panel>
+
+<sc-button bindclick="handleClick" type="ghost">切换单选框位置</sc-button>
+
+<sc-panel title="radio-动物">
+    <sc-radio value="{{animal}}" disabled="{{disabled}}" checked="{{checked}}" bindchange="handleAnimalChange">
+    </sc-radio>
+</sc-panel>
+
+<sc-button bindclick="handleDisabled" type="ghost">切换disabled状态</sc-button>

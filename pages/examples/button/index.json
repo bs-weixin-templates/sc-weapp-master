@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Button 按钮",
+  "usingComponents": {
+    "sc-button": "../../../components/button/index",
+    "sc-panel": "../../../components/panel/index"
+  }
+}

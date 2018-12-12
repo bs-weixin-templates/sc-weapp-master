@@ -1,0 +1,11 @@
+{
+	"navigationBarTitleText": "Swipeout 滑动菜单",
+	"usingComponents": {
+		"sc-swipeout": "../../../components/swipeout/index",
+		"sc-cell-group": "../../../components/cell-group/index",
+		"sc-cell": "../../../components/cell/index",
+		"sc-card": "../../../components/card/index",
+		"sc-icon": "../../../components/icon/index",
+		"sc-action-sheet": "../../../components/action-sheet/index"
+	}
+}

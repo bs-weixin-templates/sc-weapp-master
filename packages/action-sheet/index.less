@@ -1,0 +1,71 @@
+@import '../styles/index.less';
+@import '../styles/mixins/hairline.less';
+.sc-action-sheet {
+  color: @sc-text-color;
+  max-height: 90%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  padding-bottom:15px;
+  min-height:30%;
+
+  &-withtitle {
+    background-color: @sc-white;
+  }
+
+  &-item,
+  &-cancel {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    background-color: @sc-white;
+
+    &:active {
+      background-color: @sc-active-color;
+    }
+  }
+
+  &-item-disabled {
+    color: @sc-gray;
+
+    &:active {
+      background-color: @sc-white;
+    }
+  }
+
+  &-name,
+  &-subname {
+    display: inline-block;
+  }
+
+  &-subname {
+    font-size: 12px;
+    color: @sc-gray-darker;
+    margin-left: 5px;
+  }
+
+  &-loading {
+    display: inline-block;
+  }
+
+  &-cancel {
+    margin-top: 10px;
+  }
+
+  &-header {
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  &-close {
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    font-size: 18px !important;
+    color: @sc-gray-dark;
+    position: absolute !important;
+    line-height: inherit !important;
+  }
+}

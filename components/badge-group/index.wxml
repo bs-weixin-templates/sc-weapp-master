@@ -1,0 +1,3 @@
+<view class="sc-badge-group sc-hairline-top-bottom custom-class">
+  <slot />
+</view>

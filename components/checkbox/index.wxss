@@ -1,0 +1,16 @@
+.sc-checkbox-cell::after {
+  display: block;
+}
+.sc-checkbox-checkbox-left {
+  float: left;
+}
+.sc-checkbox-checkbox-right {
+  float: right;
+}
+.sc-checkbox-radio {
+  vertical-align: middle;
+}
+.sc-checkbox-title {
+  display: inline-block;
+  vertical-align: middle;
+}

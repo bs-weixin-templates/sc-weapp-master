@@ -1,0 +1,29 @@
+<view
+  class="sc-search custom-class {{ showAction || useActionSlot ? 'sc-search-show-action' : '' }}"
+  style="background: {{ background }}"
+>
+  <view class="sc-search-field">
+    <sc-field
+      clearable
+      type="search"
+      left-icon="search"
+      focus="{{ focus }}"
+      border="{{ false }}"
+      confirm-type="search"
+      value="{{ value }}"
+      disabled="{{ disabled }}"
+      readonly="{{ readony }}"
+      maxlength="{{ maxlength }}"
+      placeholder="{{ placeholder }}"
+      custom-style="padding: 3px 10px"
+      bind:blur="onBlur"
+      bind:focus="onFocus"
+      bind:change="onChange"
+      bind:confirm="onSearch"
+    />
+  </view>
+  <view wx:if="{{ showAction || useActionSlot }}" class="sc-search-action">
+    <slot wx:if="{{ useActionSlot }}" name="action" />
+    <view wx:else bind:tap="onCancel" class="cancel-class">取消</view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="custom-class sc-steps sc-steps-{{ direction }}">
+  <view
+    wx:for="{{ steps }}"
+    wx:key="index"
+    class="sc-step sc-hairline sc-step-{{ direction }} {{ item.status ? 'sc-step-' + item.status : '' }}"
+    style="{{ width ? 'width:' + width + 'px' : '' }}"
+  >
+    <view class="sc-step-title" style="{{ item.status === 'process' ? 'color: ' + activeColor : '' }}">
+      <view>{{ item.text }}</view>
+      <view>{{ item.desc }}</view>
+    </view>
+    <view class="sc-step-circle-container">
+      <view class="sc-step-circle" wx:if="{{ item.status !== 'process' }}" style="{{ item.status === 'finish' ? 'background-color: ' + activeColor : '' }}" />
+      <sc-icon wx:else name="checked" color="{{ activeColor }}" custom-class="sc-step-active" />
+    </view>
+    <view class="sc-step-line" style="{{ item.status === 'finish' ? 'background-color: ' + activeColor : '' }}" />
+  </view>
+</view>

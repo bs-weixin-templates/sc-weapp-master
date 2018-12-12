@@ -1,0 +1,59 @@
+.sc-alert {
+  position: relative;
+  margin: 10px;
+  padding: 8px 48px 8px 16px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  background: #f8f8f8;
+  color: #333;
+}
+.sc-alert.sc-alert-with-icon {
+  padding: 8px 48px 8px 38px;
+}
+.sc-alert-info {
+  color: #fff;
+  background: #f90;
+}
+.sc-alert-success {
+  color: #fff;
+  background: #19be6b;
+}
+.sc-alert-warning {
+  color: #fff;
+  background: #ff9900;
+}
+.sc-alert-error {
+  color: #fff;
+  background: #ed3f14;
+}
+.sc-alert-icon {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  font-size: 14px;
+}
+.sc-alert-desc {
+  font-size: 12px;
+}
+.sc-alert-with-desc {
+  padding: 16px;
+  position: relative;
+}
+.sc-alert-with-desc.sc-alert-with-icon {
+  padding: 16px 16px 16px 69px;
+}
+.sc-alert-with-desc .sc-alert-icon {
+  top: 50%;
+  left: 24px;
+  margin-top: -21px;
+  font-size: 28px;
+}
+.sc-alert-close {
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}

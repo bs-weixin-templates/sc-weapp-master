@@ -1,0 +1,15 @@
+.panel{
+  position: relative;
+  background: #fff;
+}
+.panel-body{
+  border-top: 1px solid #eee;
+}
+.panel-handle{
+  position: absolute;
+  top: 11px;
+  right: 30rpx;
+}
+.panel-handle button{
+  margin-left: 10px;
+}

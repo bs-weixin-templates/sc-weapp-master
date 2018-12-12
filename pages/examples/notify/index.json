@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "Notify 消息通知",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-button": "../../../components/button/index",
+		"sc-notify": "../../../components/notify/index"
+	}
+}

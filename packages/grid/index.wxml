@@ -1,0 +1,3 @@
+<view class="sc-class sc-grid {{ bordered ? 'sc-grid-bordered' : '' }}">
+    <slot></slot>
+</view>

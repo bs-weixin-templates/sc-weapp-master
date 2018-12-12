@@ -1,0 +1,18 @@
+<demo-block title="基础用法">
+  <sc-steps
+    steps="{{ steps }}"
+    active="{{ active }}"
+    custom-class="demo-margin-bottom"
+  />
+
+  <sc-button custom-class="demo-margin-left" bind:click="nextStep">下一步</sc-button>
+</demo-block>
+
+<demo-block title="竖向步骤条">
+  <sc-steps
+    steps="{{ steps }}"
+    active="{{ active }}"
+    direction="vertical"
+    active-color="#f60"
+  />
+</demo-block>

@@ -1,0 +1,100 @@
+@import "../themes/index.less";
+//定位
+.pos(@top:0px,@right:0px,@bottom:0px,@left:0px){
+  position:absolute;
+  top:@top;
+  bottom:@bottom;
+  left:@left;
+}
+//1像素border
+.border-1px(@color:#e5e5e5){
+    position: relative;
+    &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:1px solid @sc-border-color;
+        content: '';
+    }
+}
+// 禁止换行, 文本溢出省略号显示 (一行)
+.ellipsis() {
+  white-space: normal; 
+  word-wrap: break-word; 
+  word-break: break-all;
+  -o-text-overflow: ellipsis; 
+  -ms-text-overflow: ellipsis; 
+  text-overflow:ellipsis; 
+  overflow:hidden;
+}
+
+//居中
+.flex(){
+    display: -webkit-box; 
+    display: -moz-box; 
+    display:-webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+}
+.flex-auto{
+    .flex();
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+// 全屏大图背景
+.fullscreen-bg(@url) {
+  width: 100vw;
+  height: 100vh;
+  background: url(@url) no-repeat 50% 50%;
+  background-size: cover;
+}
+// 滤镜: 将彩色照片显示为黑白照片
+.grayscale() {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+// 链接默认无下划线，hover后有下划线的样式
+.hover-link() {
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+// 将链接变成默认的文字样式
+.unstyled-link() {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+  &:active, &:focus { outline: none; }
+}
+// 清除浮动
+.clearfix() {
+*zoom: 1;
+&:after { display: block; clear: both; content: ''; visibility: hidden; height: 0; }
+}
+.clearfix(table) {
+*zoom: 1;
+&:before, &:after { content: " "; display: table; clear: both; }
+}
+// 三角形
+.triangle(@width: 4px,@color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: @width solid @color;
+  border-left: @width solid transparent;
+  border-right: @width solid transparent;
+}
+
+
+ 

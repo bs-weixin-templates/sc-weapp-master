@@ -1,0 +1,11 @@
+<view class="custom-class sc-slider {{ disabled ? 'sc-slider-disabled' : '' }}" bind:tap="onClick">
+  <view class="sc-slider-bar" style="{{ barStyle }}">
+    <view
+      class="sc-slider-button"
+      bind:touchstart="onTouchStart"
+      catch:touchmove="onTouchMove"
+      bind:touchend="onTouchEnd"
+      bind:touchcancel="onTouchEnd"
+    />
+  </view>
+</view>

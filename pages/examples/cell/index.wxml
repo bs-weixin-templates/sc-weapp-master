@@ -1,0 +1,44 @@
+<demo-block title="基础用法">
+  <sc-cell-group>
+    <sc-cell title="单元格" value="内容" />
+    <sc-cell title="单元格" value="内容" label="描述信息" border="{{ false }}" />
+  </sc-cell-group>
+</demo-block>
+
+<demo-block title="展示图标">
+  <sc-cell-group>
+    <sc-cell title="单元格" icon="location" border="{{ false }}" />
+  </sc-cell-group>
+</demo-block>
+
+<demo-block title="展示箭头">
+  <sc-cell-group>
+    <sc-cell title="单元格" isLink />
+    <sc-cell title="单元格" is-link value="内容" />
+    <sc-cell
+      title="单元格"
+     isLink
+      arrow-direction="down"
+      value="内容"
+      border="{{ false }}"
+      url="/pages/dashboard/index"
+    />
+  </sc-cell-group>
+</demo-block>
+      <sc-icon
+    name="enter"
+  />
+<demo-block title="高级用法">
+  <sc-cell-group>
+    <sc-cell value="内容" icon="shop" is-link>
+      <view slot="title">
+        <view class="title">单元格</view>
+        <sc-tag type="danger">标签</sc-tag>
+      </view>
+    </sc-cell>
+    <sc-cell title="单元格" icon="location" is-link />
+    <sc-cell title="单元格" border="{{ false }}">
+      <sc-icon slot="right-icon" name="search" />
+    </sc-cell>
+  </sc-cell-group>
+</demo-block>

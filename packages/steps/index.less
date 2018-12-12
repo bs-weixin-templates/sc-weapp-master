@@ -1,0 +1,158 @@
+@import '../styles/index.less';
+@import '../styles/mixins/hairline.less';
+.sc-steps {
+  overflow: hidden;
+  background-color: @sc-white;
+
+  &-horizontal {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 10px 15px;
+  }
+
+  &-vertical {
+    padding: 0 0 0 35px;
+  }
+}
+
+.sc-step {
+  flex: 1;
+  font-size: 14px;
+  position: relative;
+  color: @sc-gray-dark;
+
+  &-finish {
+    color: @sc-text-color;
+  }
+
+  &-circle {
+    width: 5px;
+    height: 5px;
+    background-color: #999;
+    border-radius: 50%;
+  }
+
+  &-horizontal {
+    float: left;
+    padding-bottom: 10px;
+
+    &:first-child {
+      .sc-step-title {
+        transform: none;
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      position: absolute;
+      right: 10px;
+      width: auto;
+
+      .sc-step-title {
+        transform: none;
+        margin-left: 0;
+        text-align: right;
+      }
+
+      .sc-step-circle-container {
+        left: auto;
+        right: -9px;
+      }
+
+      .sc-step-line {
+        width: 0;
+      }
+    }
+
+    .sc-step-circle-container {
+      position: absolute;
+      bottom: 0;
+      left: -8px;
+      padding: 0 8px;
+      background-color: @sc-white;
+      z-index: 1;
+    }
+
+    .sc-step-title {
+      font-size: 12px;
+      transform: translate3d(-50%, 0, 0);
+      display: inline-block;
+      margin-left: 3px;
+    }
+
+    .sc-step-line {
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 100%;
+      height: 1px;
+      background-color: @sc-border-color;
+    }
+
+    &.sc-step-process {
+      color: @sc-text-color;
+
+      .sc-step-circle-container {
+        bottom: -4px;
+      }
+
+      .sc-step-active {
+        font-size: 12px;
+        color: @sc-green;
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+
+  &-vertical {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 10px 10px 0;
+
+    &:not(:last-child)::after {
+      border-bottom-width: 1px;
+    }
+
+    &:first-child {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        background-color: @sc-white;
+        top: 0;
+        left: -15px;
+        z-index: 1;
+      }
+    }
+
+    .sc-step-active,
+    .sc-step-circle {
+      z-index: 2;
+      position: absolute;
+    }
+
+    .sc-step-active {
+      top: 12px;
+      left: -20px;
+      line-height: 1;
+      font-size: 12px;
+    }
+
+    .sc-step-circle {
+      top: 16px;
+      left: -17px;
+    }
+
+    .sc-step-line {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 1px;
+      height: 100%;
+      background-color: @sc-border-color;
+    }
+  }
+}

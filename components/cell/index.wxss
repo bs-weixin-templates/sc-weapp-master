@@ -1,0 +1,125 @@
+.sc-hairline,
+.sc-hairline-top,
+.sc-hairline-left,
+.sc-hairline-right,
+.sc-hairline-bottom,
+.sc-hairline-top-bottom,
+.sc-hairline-surround {
+  position: relative;
+}
+.sc-hairline::after,
+.sc-hairline-top::after,
+.sc-hairline-left::after,
+.sc-hairline-right::after,
+.sc-hairline-bottom::after,
+.sc-hairline-top-bottom::after,
+.sc-hairline-surround::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e5e5e5;
+}
+.sc-hairline-top::after {
+  border-top-width: 1px;
+}
+.sc-hairline-left::after {
+  border-left-width: 1px;
+}
+.sc-hairline-right::after {
+  border-right-width: 1px;
+}
+.sc-hairline-bottom::after {
+  border-bottom-width: 1px;
+}
+.sc-hairline-top-bottom::after {
+  border-width: 1px 0;
+}
+.sc-hairline-surround::after {
+  border-width: 1px;
+}
+.sc-cell {
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  box-sizing: border-box;
+  line-height: 24px;
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  align-items: center;
+  min-height: 52px;
+}
+.sc-cell::after {
+  left: 15px;
+  right: 0;
+  width: auto;
+  transform: scale(1, 0.5);
+  border-bottom-width: 1px;
+}
+.sc-cell-group {
+  background-color: #fff;
+}
+.sc-cell-label {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #666;
+}
+.sc-cell-title {
+  margin-left: 10px;
+  flex: 1;
+  word-break: break-all;
+  font-size: 17px;
+}
+.sc-cell-value {
+  flex: 1;
+}
+.sc-cell-value {
+  overflow: hidden;
+  text-align: right;
+  vertical-align: middle;
+}
+.sc-cell-left-icon {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.sc-cell-right-icon {
+  color: #999;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+.sc-cell-right-icon-left::before {
+  transform: rotate(180deg);
+}
+.sc-cell-right-icon-up::before {
+  transform: rotate(-90deg);
+}
+.sc-cell-right-icon-down::before {
+  transform: rotate(90deg);
+}
+.sc-cell-clickable:active {
+  background-color: #e8e8e8;
+}
+.sc-cell-required {
+  overflow: visible;
+}
+.sc-cell-required::before {
+  content: '*';
+  position: absolute;
+  left: 7px;
+  font-size: 14px;
+  color: #f44;
+}
+.sc-cell-center {
+  align-items: center;
+}

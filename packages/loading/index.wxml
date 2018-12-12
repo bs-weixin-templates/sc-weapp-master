@@ -1,0 +1,16 @@
+<view
+  class="sc-loading custom-class"
+  style="width: {{ size }}; height: {{ size }}"
+>
+  <view
+    class="sc-loading-spinner sc-loading-spinner-{{ type }}"
+    style="color: {{ color }};"
+  >
+    <view
+      wx:if="{{ type === 'spinner' }}"
+      wx:for="item in 12"
+      wx:key="{{ index }}"
+      class="sc-loading-dot"
+    />
+  </view>
+</view>

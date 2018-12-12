@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "TreeSelect 分类选择",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-tree-select": "../../../components/tree-select/index"
+	}
+}

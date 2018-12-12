@@ -1,0 +1,6 @@
+<view class="sc-class sc-drawer {{ visible ? 'sc-drawer-show' : '' }} {{ 'sc-drawer-' + mode }}">
+    <view wx:if="{{ mask }}" class="sc-drawer-mask" bindtap="handleMaskClick"></view>
+    <view class="sc-drawer-container">
+        <slot></slot>
+    </view>
+</view>

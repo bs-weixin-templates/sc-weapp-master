@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "Page 分页",
+	"usingComponents": {
+		"sc-page": "../../../components/page/index",
+		"sc-icon": "../../../components/icon/index",
+		"sc-panel": "../../../components/panel/index"
+	}
+}

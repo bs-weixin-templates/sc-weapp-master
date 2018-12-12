@@ -1,0 +1,5 @@
+<view
+  class="sc-hairline-surround sc-tag custom-class {{ mark ? 'sc-tag-mark' : '' }} {{ plain ? 'sc-tag-plain' : '' }} {{ type ? 'sc-tag-' + type : '' }}"
+>
+  <slot />
+</view>

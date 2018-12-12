@@ -1,0 +1,70 @@
+sc-tabs-nav<demo-block title="基础用法">
+  <sc-tabs active="{{ 1 }}" bind:change="onChange">
+    <sc-tab
+      wx:for="1234"
+      wx:key="index"
+      title="{{ '标签' + item }}"
+    >
+      <view class="content">
+        {{ '内容' + item }}
+      </view>
+    </sc-tab>
+  </sc-tabs>
+</demo-block>
+
+<demo-block title="横向滚动">
+  <sc-tabs>
+    <sc-tab
+      wx:for="123456"
+      wx:key="index"
+      title="{{ '标签' + item }}"
+    >
+      <view class="content">
+        {{ '内容' + item }}
+      </view>
+    </sc-tab>
+  </sc-tabs>
+</demo-block>
+
+<demo-block title="禁用标签">
+  <sc-tabs bind:disabled="onClickDisabled">
+    <sc-tab
+      wx:for="123"
+      wx:key="index"
+      disabled="{{ index === 1 }}"
+      title="{{ '标签' + item }}"
+    >
+      <view class="content">
+        {{ '内容' + item }}
+      </view>
+    </sc-tab>
+  </sc-tabs>
+</demo-block>
+
+<demo-block title="样式风格">
+  <sc-tabs type="card">
+    <sc-tab
+      wx:for="123"
+      wx:key="index"
+      title="{{ '标签' + item }}"
+    >
+      <view class="content-2">
+        {{ '内容' + item }}
+      </view>
+    </sc-tab>
+  </sc-tabs>
+</demo-block>
+
+<demo-block title="点击事件">
+  <sc-tabs bind:click="onClick">
+    <sc-tab
+      wx:for="12"
+      wx:key="index"
+      title="{{ '标签' + item }}"
+    >
+      <view class="content">
+        {{ '内容' + item }}
+      </view>
+    </sc-tab>
+  </sc-tabs>
+</demo-block>

@@ -1,0 +1,9 @@
+<view id="{{name}}" class="sc-class sc-collapse-item ">
+    <view class="sc-collapse-item-title-wrap" bindtap="trigger">
+        <sc-icon size="16" type="enter" sc-class="{{ showContent ? 'sc-collapse-item-arrow-show' : 'sc-collapse-item-arrow' }}"/>
+        <text class="sc-collapse-item-title sc-class-title">{{title}}</text>
+    </view>
+    <view class="sc-collapse-item-content {{showContent}}  sc-class-content">
+        <slot name="content"></slot>
+    </view>
+</view>

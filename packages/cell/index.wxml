@@ -1,0 +1,29 @@
+<view
+  class="custom-class sc-cell {{ center ? 'sc-cell-center' : '' }} {{ required ? 'sc-cell-required' : '' }} {{ isLink || clickable ? 'sc-cell-clickable' : '' }} {{ border ? 'sc-hairline' : '' }}"  
+  style="{{ customStyle }}"
+  bind:tap="onClick"
+>
+  <sc-icon wx:if="{{ icon }}" custom-class="sc-cell-left-icon left-icon-class" name="{{ icon }}" />
+  <slot wx:else name="icon" />
+
+  <view wx:if="{{ title }}" class="sc-cell-title title-class" style="{{ titleWidth ? 'max-width: ' + titleWidth + ';min-width: ' + titleWidth : '' }}">
+    {{ title }}
+    <view wx:if="{{ label }}" class="sc-cell-label label-class">{{ label }}</view>
+  </view>
+  <slot name="title" />
+
+  <view class="sc-cell-value value-class">
+    <view wx:if="{{ value }}">{{ value }}</view>
+    <slot wx:else />
+  </view>
+
+  <sc-icon
+    wx:if="{{ isLink }}"
+    name="enter"
+    color="#ccc"
+    custom-class="sc-cell-right-icon right-icon-class {{ arrowDirection ? 'sc-cell-right-icon-' + arrowDirection : '' }}"
+  />
+  <slot wx:else name="right-icon" />
+
+  <slot name="extra" />
+</view>

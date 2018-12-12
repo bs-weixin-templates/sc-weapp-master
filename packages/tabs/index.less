@@ -1,0 +1,125 @@
+@import '../styles/index.less';
+@import '../styles/mixins/ellipsis.less';
+@import '../styles/mixins/hairline.less';
+@sc-tabs-line-height: 44px;
+@sc-tabs-card-height: 30px;
+
+.sc-tabs {
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+
+  &-wrap {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    &-page-top {
+      position: fixed;
+    }
+
+    &-content-bottom {
+      top: auto;
+      bottom: 0;
+    }
+
+    &-scrollable {
+      .sc-tab {
+        flex: 0 0 22%;
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    user-select: none;
+    position: relative;
+    background-color: @sc-white;
+
+    &-line {
+      height: 100%;
+    }
+
+    &-card {
+      margin: 0 15px;
+      border-radius: 2px;
+      box-sizing: border-box;
+      border: 1px solid @sc-red;
+      height: @sc-tabs-card-height;
+
+      .sc-tab {
+        color: @sc-red;
+        border-right: 1px solid @sc-red;
+        line-height: calc(@sc-tabs-card-height - 2px);
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &.sc-tab-active {
+          color: @sc-white;
+          background-color: @sc-red;
+        }
+      }
+    }
+  }
+
+  &__line {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    position: absolute;
+    background-color: @sc-red;
+  }
+
+  &-line {
+    padding-top: @sc-tabs-line-height;
+
+    .sc-tabs-wrap {
+      height: @sc-tabs-line-height;
+    }
+  }
+
+  &-card {
+    padding-top: @sc-tabs-card-height;
+
+    .sc-tabs-wrap {
+      height: @sc-tabs-card-height;
+    }
+  }
+}
+
+.sc-tab {
+  flex: 1;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 14px;
+  position: relative;
+  color: @sc-text-color;
+  line-height: @sc-tabs-line-height;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: @sc-white;
+  min-width: 0; /* hack for flex ellipsis */
+
+  span {
+    display: block;
+  }
+
+  &:active {
+    background-color: @sc-active-color;
+  }
+
+  &-active {
+    color: @sc-red;
+  }
+
+  &-disabled {
+    color: @sc-gray;
+
+    &:active {
+      background-color: @sc-white;
+    }
+  }
+}

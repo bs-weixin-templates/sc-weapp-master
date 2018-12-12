@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "Avatar 头像",
+	"usingComponents": {
+		"sc-avatar": "../../../components/avatar/index",
+		"sc-row": "../../../components/row/index",
+		"sc-col": "../../../components/col/index",
+		"sc-panel": "../../../components/panel/index"
+	}
+}

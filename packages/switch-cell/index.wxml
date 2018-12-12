@@ -1,0 +1,15 @@
+<sc-cell
+  center
+  title="{{ title }}"
+  border="{{ border }}"
+  custom-class="sc-switch-cell"
+>
+  <sc-switch
+    size="{{ size }}"
+    checked="{{ checked }}"
+    loading="{{ loading }}"
+    disabled="{{ disabled }}"
+    custom-class="sc-switch-cell-switch"
+    bind:change="onChange"
+  />
+</sc-cell>

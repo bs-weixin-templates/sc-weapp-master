@@ -1,0 +1,6 @@
+<view
+  class="custom-class sc-col {{ span ? 'sc-col-' + span : '' }} {{ offset ? 'sc-col-offset-' + offset : '' }}"
+  style="{{ style }}"
+>
+  <slot />
+</view>

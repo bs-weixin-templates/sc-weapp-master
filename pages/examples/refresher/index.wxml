@@ -1,0 +1,17 @@
+<sc-refresher id="sc-refresher" bind:pulling="onPulling" bind:refresh="onRefresh">
+    <view class="weusc-panel weusc-panel_access">
+        <view class="weusc-panel__hd">文字组合列表</view>
+        <view class="weusc-panel__bd">
+            <view class="weusc-media-box weusc-media-box_text" wx:for="{{ items }}" wx:key="">
+               
+
+                <sc-panel title="{{ item.title }}" >
+                <view class="content">{{item.content}}</view>
+        
+                </sc-panel>
+            </view>
+
+            
+        </view>
+    </view>
+</sc-refresher>

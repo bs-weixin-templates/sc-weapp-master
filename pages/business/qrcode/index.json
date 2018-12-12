@@ -1,0 +1,13 @@
+{
+
+    "navigationBarTitleText": "福码",
+    "usingComponents": {
+        "sc-radio-group": "../../../components/radio-group/index",
+        "sc-radio": "../../../components/radio/index",
+        "sc-list-item": "../../../components/list-item/index",
+        "sc-icon": "../../../components/icon/index",
+        "sc-tag": "../../../components/tag/index",
+        "sc-list": "../../../components/list/index",
+        "sc-action-sheet": "../../../components/action-sheet/index"
+    }
+}

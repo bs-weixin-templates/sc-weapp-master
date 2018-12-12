@@ -1,0 +1,10 @@
+.sc-col {
+  float: left;
+  box-sizing: border-box;
+}
+.loop( @i )when( @i > 0 ){
+    .sc-col-@{i} { width: calc(@i * 100% / 24); }
+  	.sc-col-offset-@{i} { margin-left: calc(@i * 100% / 24); }
+    .loop((@i - 1));
+}
+.loop(24);

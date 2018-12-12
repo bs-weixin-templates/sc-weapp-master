@@ -1,0 +1,86 @@
+.sc-stepper {
+  font-size: 0;
+}
+.sc-stepper-minus,
+.sc-stepper-plus,
+.sc-stepper-input {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.sc-stepper-minus,
+.sc-stepper-plus {
+  width: 40px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  padding: 5px;
+}
+.sc-stepper-minus::before,
+.sc-stepper-plus::before {
+  width: 9px;
+  height: 1px;
+}
+.sc-stepper-minus::after,
+.sc-stepper-plus::after {
+  width: 1px;
+  height: 9px;
+}
+.sc-stepper-minus::before,
+.sc-stepper-plus::before,
+.sc-stepper-minus::after,
+.sc-stepper-plus::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6c6c6c;
+}
+.sc-stepper-minus:active,
+.sc-stepper-plus:active {
+  background-color: #e8e8e8;
+}
+.sc-stepper-minus-disabled,
+.sc-stepper-plus-disabled {
+  background-color: #f8f8f8;
+}
+.sc-stepper-minus-disabled::before,
+.sc-stepper-plus-disabled::before,
+.sc-stepper-minus-disabled::after,
+.sc-stepper-plus-disabled::after {
+  background-color: #c9c9c9;
+}
+.sc-stepper-minus-disabled:active,
+.sc-stepper-plus-disabled:active {
+  background-color: #f8f8f8;
+}
+.sc-stepper-minus {
+  border-radius: 2px 0 0 2px;
+}
+.sc-stepper-minus::after {
+  display: none;
+}
+.sc-stepper-plus {
+  border-radius: 0 2px 2px 0;
+}
+.sc-stepper-input {
+  width: 33px;
+  height: 26px;
+  padding: 1px;
+  border: 1px solid #e5e5e5;
+  border-width: 1px 0;
+  border-radius: 0;
+  box-sizing: content-box;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  -webkit-appearance: none;
+}
+.sc-stepper-input-disabled {
+  color: #c9c9c9;
+  background-color: #f8f8f8;
+}

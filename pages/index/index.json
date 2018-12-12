@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "Radio 单选",
+    "usingComponents":
+    {
+     "sc-button":"../../components/button/index", 
+        "sc-action-sheet":"../../components/action-sheet/index",
+        "sc-radio-group": "../../components/radio-group/index",
+        "sc-radio": "../../components/radio/index"
+    }
+}

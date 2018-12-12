@@ -1,0 +1,4 @@
+<view class="sc-class sc-avatar sc-avatar-{{ shape }} sc-avatar-{{ size }} {{ src ? 'sc-avatar-image' : '' }}">
+    <image src="{{ src }}" wx:if="{{ src !== '' }}"></image>
+    <view class="sc-avatar-string" wx:else><slot></slot></view>
+</view>

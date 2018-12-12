@@ -1,0 +1,7 @@
+<view
+  wx:if="{{ inited }}"
+  class="sc-tab-pane"
+  style="{{ active ? '' : 'display: none' }}"
+>
+  <slot />
+</view>

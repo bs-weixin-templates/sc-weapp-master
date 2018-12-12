@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container page">
+  <view class="panel">
+    <view class="header">
+
+    </view>
+    <view class="qrcode">
+      <canvas canvas-id="qrcode" />
+    </view>
+      <view class="footer">
+
+      <sc-list-item
+      title="单元格"
+      is-link
+      arrow-direction="down"
+       bind:click="selectBankClick"
+      border="{{ false }}"
+    />
+      <sc-action-sheet
+    show="{{ showBankList }}"
+    title="标题"
+    bind:close="selectBankClick"
+  >
+    <sc-radio-group current="{{current}}" bindchange="handleFruitChange">
+        <sc-radio wx:for="{{bankList}}" position="right" wx:key="{{item.id}}" value="{{item.paymentName}}">
+        </sc-radio>
+    </sc-radio-group>
+  </sc-action-sheet>
+    </view>
+  </view>
+ 
+</view>

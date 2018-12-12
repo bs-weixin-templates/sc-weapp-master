@@ -1,0 +1,4 @@
+<view class="sc-badge sc-hairline custom-class {{ active ? 'sc-badge-active' : '' }}" bind:tap="onClick">
+  <view wx:if="{{ info }}" class="sc-badge-info">{{ info }}</view>
+  {{ title }}
+</view>

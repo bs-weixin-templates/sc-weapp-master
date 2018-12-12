@@ -1,0 +1,14 @@
+<view class="sc-progress custom-class">
+  <view
+    class="sc-progress-portion {{ showPivot && text ? 'sc-progress-portion-with-pivot' : '' }}"
+    style="{{ portionStyle }}"
+  >
+    <view
+      wx:if="{{ showPivot && text }}"
+      style="{{ pivotStyle }}"
+      class="sc-progress-pivot"
+    >
+      {{ text }}
+    </view>
+  </view>
+</view>

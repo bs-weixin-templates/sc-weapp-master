@@ -1,0 +1,62 @@
+@import '../styles/index.less';
+@import '../styles/mixins/ellipsis.less';
+@import '../styles/mixins/hairline.less';
+.sc-nav-bar {
+  height: 46px;
+  position: relative;
+  user-select: none;
+  text-align: center;
+  line-height: 46px;
+  background-color: @sc-white;
+
+  &-arrow {
+    color: @sc-blue;
+    vertical-align: middle;
+    transform: rotate(180deg);
+
+    + .sc-nav-bar-text {
+      margin-left: -20px;
+      padding-left: 25px;
+    }
+  }
+
+  &-fixed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+  }
+
+  &-title {
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 16px;
+  }
+
+  &-left,
+  &-right {
+    bottom: 0;
+    font-size: 14px;
+    position: absolute;
+  }
+
+  &-left {
+    left: 15px;
+  }
+
+  &-right {
+    right: 15px;
+  }
+
+  &-text {
+    color: @sc-blue;
+    margin: 0 -15px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:active {
+      background-color: @sc-active-color;
+    }
+  }
+}

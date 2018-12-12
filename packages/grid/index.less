@@ -1,0 +1,37 @@
+@import '../styles/index.less';
+.sc-grid {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: @sc-white;
+  &-bordered{
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 2rpx;
+      border-top: 2rpx solid @sc-divider-color;
+      color: @sc-text-color;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+              transform: scaleY(0.5);
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rpx;
+      bottom: 0;
+      border-left: 2rpx solid @sc-divider-color;
+      color: @sc-text-color;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transform: scaleX(0.5);
+              transform: scaleX(0.5);
+    }
+  }
+}

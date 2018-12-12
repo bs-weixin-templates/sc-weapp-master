@@ -1,0 +1,24 @@
+<demo-block title="基础用法" padding>
+  <sc-row>
+    <sc-col span="8" custom-class="dark">span: 8</sc-col>
+    <sc-col span="8" custom-class="light">span: 8</sc-col>
+    <sc-col span="8" custom-class="dark">span: 8</sc-col>
+  </sc-row>
+
+  <sc-row>
+    <sc-col span="4" custom-class="dark">span: 4</sc-col>
+    <sc-col span="10" offset="4" custom-class="light">offset: 4, span: 10</sc-col>
+  </sc-row>
+
+  <sc-row>
+    <sc-col offset="12" span="12" custom-class="dark">offset: 12, span: 12</sc-col>
+  </sc-row>
+</demo-block>
+
+<demo-block title="在列元素之间增加间距" padding>
+  <sc-row gutter="20">
+    <sc-col span="8" custom-class="dark">span: 8</sc-col>
+    <sc-col span="8" custom-class="light">span: 8</sc-col>
+    <sc-col span="8" custom-class="dark">span: 8</sc-col>
+  </sc-row>
+</demo-block>

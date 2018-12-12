@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "Popup 弹出层",
+	"usingComponents": {
+		"demo-block": "../../../../components/demo-block/index",
+		"sc-popup": "../../../components/popup/index",
+		"sc-button": "../../../components/button/index"
+	}
+}

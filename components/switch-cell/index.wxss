@@ -1,0 +1,7 @@
+.sc-switch-cell {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.sc-switch-cell-switch {
+  vertical-align: middle;
+}

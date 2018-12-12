@@ -1,0 +1,96 @@
+@import '../styles/index.less';
+@import '../styles/mixins/hairline.less';
+
+.sc-cell {
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  box-sizing: border-box;
+  line-height: 24px;
+  position: relative;
+  background-color: @sc-white;
+  color: @sc-text-color;
+  font-size: 14px;
+  align-items: center;
+  min-height:52px;
+  &::after {
+    left: 15px;
+    right: 0;
+    width: auto;
+    transform: scale(1, .5);
+    border-bottom-width: 1px;
+  }
+
+  &-group {
+    background-color: @sc-white;
+  }
+
+  &-label {
+    font-size: 12px;
+    line-height: 1.2;
+    color: @sc-gray-darker;
+  }
+  &-title{
+    margin-left:10px;
+    flex: 1;
+    word-break:break-all;
+    font-size: 17px;
+  }
+  &-value {
+    flex: 1;
+  }
+
+  &-value {
+    overflow: hidden;
+    text-align: right;
+    vertical-align: middle;
+  }
+
+  &-left-icon {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 5px;
+    vertical-align:middle;
+  }
+
+  &-right-icon {
+    color: @sc-gray-dark;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 5px;
+
+    &-left::before {
+      transform: rotate(180deg);
+    }
+
+    &-up::before {
+      transform: rotate(-90deg);
+    }
+
+    &-down::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  &-clickable {
+    &:active {
+      background-color: @sc-active-color;
+    }
+  }
+
+  &-required {
+    overflow: visible;
+
+    &::before {
+      content: '*';
+      position: absolute;
+      left: 7px;
+      font-size: 14px;
+      color: @sc-red;
+    }
+  }
+
+  &-center {
+    align-items: center;
+  }
+}

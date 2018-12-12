@@ -1,0 +1,15 @@
+
+
+
+
+  <sc-button bind:click="toggleActionSheet3">弹出带标题的 ActionSheet</sc-button>
+  <sc-action-sheet
+    show="{{ show3 }}"
+    title="标题"
+    bind:close="toggleActionSheet3"
+  >
+        <sc-radio-group current="{{current}}" bindchange="handleFruitChange">
+        <sc-radio wx:for="{{fruit}}" position="{{left}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </sc-radio>
+    </sc-radio-group>
+  </sc-action-sheet>

@@ -1,0 +1,16 @@
+<view class="sc-toast-mask" wx:if="{{ visible && mask }}" bindtap="handleHide"></view>
+<view class="sc-class sc-toast" wx:if="{{ visible }}">
+    <block wx:if="{{ type !== 'default' }}">
+        <view class="sc-toast-type">
+            <sc-icon sc-class="sc-toast-icon" name="success" wx:if="{{ type === 'success' }}"></sc-icon>
+            <sc-icon sc-class="sc-toast-icon" name="prompt" wx:elif="{{ type === 'warning' }}"></sc-icon>
+            <sc-icon sc-class="sc-toast-icon" name="delete" wx:elif="{{ type === 'error' }}"></sc-icon>
+            <view class="sc-toast-icon sc-toast-loading" wx:elif="{{ type === 'loading' }}"></view>
+        </view>
+    </block>
+    <block wx:else>
+        <sc-icon sc-class="sc-toast-icon" type="{{ icon }}" wx:if="{{ icon }}"></sc-icon>
+        <image class="sc-toast-image" src="{{ image }}" wx:if="{{ image }}" mode="aspectFit"></image>
+    </block>
+    <view class="sc-toast-content" wx:if="{{ content }}">{{ content }}</view>
+</view>

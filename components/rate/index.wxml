@@ -1,0 +1,23 @@
+<view class="sc-class sc-rate" 
+    bindtouchmove="handleTouchMove">
+    <input type="text" :name="name" wx:value="{{value}}" class="sc-rate-hide-input" />
+    <view
+        wx:for="{{count}}"
+        wx:key="{{item}}" 
+        class="sc-rate-star {{ parse.getCurrent( value,index ) }}" 
+        data-index="{{index}}" 
+        bindtap="handleClick">
+        <sc-icon type="collection_fill" size="{{size}}"></sc-icon>
+    </view>
+    <view class="sc-rate-text" wx:if="{{ value !== 0 }}"><slot></slot></view>
+</view>
+<wxs module="parse">
+var prefixCls = 'sc-rate';
+module.exports = {
+    getCurrent : function( value,index ){
+        if( index < value  ){
+            return prefixCls + '-current'
+        }
+    }
+}
+</wxs>

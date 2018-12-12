@@ -1,0 +1,55 @@
+@import '../styles/index.less';
+@import '../styles/mixins/hairline.less';
+.sc-badge {
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.4;
+  user-select: none;
+  color: @sc-gray-darker;
+  word-break: break-all;
+  box-sizing: border-box;
+  padding: 20px 12px 20px 9px;
+  background-color: @sc-background-color;
+  border-left: 3px solid transparent;
+
+  &:active {
+    background-color: @sc-active-color;
+  }
+
+  &::after {
+    border-bottom-width: 1px;
+  }
+
+  &-active {
+    font-weight: bold;
+    color: @sc-text-color;
+    border-color: @sc-red;
+
+    &::after {
+      border-right-width: 1px;
+    }
+
+    &,
+    &:active {
+      background-color: @sc-white;
+    }
+  }
+
+  &-info {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: @sc-white;
+    font-size: 10px;
+    font-weight: normal;
+    transform: scale(0.8);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 6px;
+    min-width: 18px;
+    line-height: 18px;
+    border-radius: 9px;
+    background-color: @sc-red;
+  }
+}

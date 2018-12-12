@@ -1,0 +1,105 @@
+.sc-hairline,
+.sc-hairline-top,
+.sc-hairline-left,
+.sc-hairline-right,
+.sc-hairline-bottom,
+.sc-hairline-top-bottom,
+.sc-hairline-surround {
+  position: relative;
+}
+.sc-hairline::after,
+.sc-hairline-top::after,
+.sc-hairline-left::after,
+.sc-hairline-right::after,
+.sc-hairline-bottom::after,
+.sc-hairline-top-bottom::after,
+.sc-hairline-surround::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e5e5e5;
+}
+.sc-hairline-top::after {
+  border-top-width: 1px;
+}
+.sc-hairline-left::after {
+  border-left-width: 1px;
+}
+.sc-hairline-right::after {
+  border-right-width: 1px;
+}
+.sc-hairline-bottom::after {
+  border-bottom-width: 1px;
+}
+.sc-hairline-top-bottom::after {
+  border-width: 1px 0;
+}
+.sc-hairline-surround::after {
+  border-width: 1px;
+}
+.sc-action-sheet {
+  color: #333;
+  max-height: 90%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  padding-bottom: 15px;
+  min-height: 30%;
+}
+.sc-action-sheet-withtitle {
+  background-color: #fff;
+}
+.sc-action-sheet-item,
+.sc-action-sheet-cancel {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+.sc-action-sheet-item:active,
+.sc-action-sheet-cancel:active {
+  background-color: #e8e8e8;
+}
+.sc-action-sheet-item-disabled {
+  color: #c9c9c9;
+}
+.sc-action-sheet-item-disabled:active {
+  background-color: #fff;
+}
+.sc-action-sheet-name,
+.sc-action-sheet-subname {
+  display: inline-block;
+}
+.sc-action-sheet-subname {
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+}
+.sc-action-sheet-loading {
+  display: inline-block;
+}
+.sc-action-sheet-cancel {
+  margin-top: 10px;
+}
+.sc-action-sheet-header {
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+}
+.sc-action-sheet-close {
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  font-size: 18px !important;
+  color: #999;
+  position: absolute !important;
+  line-height: inherit !important;
+}

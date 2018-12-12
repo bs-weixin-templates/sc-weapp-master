@@ -1,0 +1,40 @@
+<view class="sc-modal-mask sc-class-mask {{ visible ? 'sc-modal-mask-show' : '' }}"></view>
+<view class="sc-class sc-modal {{ visible ? 'sc-modal-show' : '' }}">
+    <view class="sc-modal-main">
+        <view class="sc-modal-content">
+            <view class="sc-modal-title" wx:if="{{ title }}">{{ title }}</view>
+            <view class="sc-modal-body"><slot></slot></view>
+            <view class="sc-modal-actions" wx:if="{{ actions.length }}">
+                <block wx:if="{{ actionMode === 'horizontal' }}">
+                    <sc-grid sc-class="sc-modal-grid" col="{{actions.length}}">
+                        <sc-grid-item sc-class="{{ actions.length === (index + 1) ? 'sc-modal-grid-item-last' : 'sc-modal-grid-item' }}" wx:for="{{ actions }}" wx:key="{{ item.name }}">
+                            <template is="button" data="{{ item, index }}"></template>
+                        </sc-grid-item>
+                    </sc-grid>
+                </block>
+                <block wx:else>
+                    <view class="sc-modal-action-vertical" wx:for="{{ actions }}" wx:key="{{ item.name }}">
+                        <template is="button" data="{{ item, index }}"></template>
+                    </view>
+                </block>
+            </view>
+            <view class="sc-modal-actions" wx:else>
+                <sc-grid sc-class="sc-modal-grid"  bordered="{{false}}" col="{{showOk===true&&showCancel===true?2:1}}" wx:if="{{ showOk || showCancel }}">
+                    <sc-grid-item sc-class="sc-modal-grid-item" wx:if="{{ showCancel }}">
+                       <sc-button sc-class="sc-modal-btn-cancel" long type="ghost" bind:click="handleClickCancel">{{ cancelText }}</sc-button>
+                    </sc-grid-item>
+                    <sc-grid-item sc-class="sc-modal-grid-item-last" wx:if="{{ showOk }}">
+                       <sc-button sc-class="sc-modal-btn-ok" long type="ghost" bind:click="handleClickOk">{{ okText }}</sc-button>
+                    </sc-grid-item>
+                </sc-grid>
+            </view>
+        </view>
+    </view>
+</view>
+<template name="button">
+    <sc-button  long type="ghost" data-index="{{ index }}" bind:click="handleClickItem">
+        <view class="sc-modal-btn-loading" wx:if="{{ item.loading }}"></view>
+        <sc-icon wx:if="{{ item.icon }}" type="{{ item.icon }}" sc-class="sc-modal-btn-icon"></sc-icon>
+        <view class="sc-modal-btn-text" style="{{ item.color ? 'color: ' + item.color : '' }}">{{ item.name }}</view>
+    </sc-button>
+</template>

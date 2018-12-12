@@ -1,0 +1,10 @@
+<view class="sc-sticky-item">
+    <view class="sc-sticky-item-header sc-class {{ isFixed === true ? 'sc-sticky-fixed' : '' }}">
+        <view class="sc-sticky-title">
+            <slot name="title"></slot>
+        </view>
+    </view>
+    <view class="sc-index-item-content">
+        <slot name="content"></slot>
+    </view>
+</view>

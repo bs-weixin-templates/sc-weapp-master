@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "Checkbox 复选",
+    "usingComponents":
+    {   
+        "sc-panel": "../../../components/panel/index",
+        "sc-button": "../../../components/button/index",
+        "sc-checkbox-group": "../../../components/checkbox-group/index",
+        "sc-checkbox": "../../../components/checkbox/index"
+    }
+}

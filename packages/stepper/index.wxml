@@ -1,0 +1,18 @@
+<view class="sc-stepper custom-class">
+  <view
+    class="minus-class sc-stepper-minus {{ disabled || value <= min ? 'sc-stepper-minus-disabled' : '' }}"
+    bind:tap="onMinus"
+  />
+  <input
+    type="{{ integer ? 'number' : 'digit' }}"
+    class="input-class sc-stepper-input {{ disabled || disableInput ? 'sc-stepper-input-disabled' : '' }}"
+    value="{{ value }}"
+    disabled="{{ disabled || disableInput }}"
+    bindinput="onInput"
+    bind:blur="onBlur"
+  />
+  <view
+    class="plus-class sc-stepper-plus {{ disabled || value >= max ? 'sc-stepper-plus-disabled' : '' }}"
+    bind:tap="onPlus"
+  />
+</view>

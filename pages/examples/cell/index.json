@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Cell 单元格",
+  "usingComponents": {
+    "demo-block": "../../../components/demo-block/index",
+    "sc-cell": "../../../components/cell/index",
+    "sc-icon": "../../../components/icon/index",
+    "sc-tag": "../../../components/tag/index",
+    "sc-cell-group": "../../../components/cell-group/index"
+  }
+}

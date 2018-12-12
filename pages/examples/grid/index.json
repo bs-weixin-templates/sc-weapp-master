@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "Grid",
+	"usingComponents": {
+		"demo-block": "../../../../components/demo-block/index",
+		"sc-icon": "../../../components/icon/index",
+		"sc-grid": "../../../components/grid/index",
+		"sc-grid-item": "../../../components/grid-item/index"
+	}
+}

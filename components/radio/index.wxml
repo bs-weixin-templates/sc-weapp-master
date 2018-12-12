@@ -1,0 +1,8 @@
+<view class="sc-class sc-radio" catchtap="radioChange">
+    <sc-cell sc-class="sc-radio-cell">
+        <label>
+            <radio value="{{value}}" checked="{{checked}}" color="{{checked?color:''}}" disabled="{{disabled}}" class="sc-radio-radio {{positionCls}}" />
+            <view class="sc-radio-title">{{value}}</view>
+        </label>
+    </sc-cell>
+</view>

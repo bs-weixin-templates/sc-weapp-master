@@ -1,0 +1,6 @@
+<sc-grid>
+    <view class="icon-item" wx:for="{{ list }}" wx:key="{{ item }}">
+        <sc-icon name="{{ item }}" size="28" color="#80848f"></sc-icon>
+        <view class="icon-item-name">{{ item }}</view>
+    </view>
+</sc-grid>

@@ -1,0 +1,24 @@
+<view
+  class="custom-class sc-nav-bar sc-hairline-bottom {{ fixed ? 'sc-nav-bar-fixed' : '' }}"
+  style="z-index: {{ zIndex }}"
+>
+  <view class="sc-nav-bar-left" bind:tap="onClickLeft">
+    <block wx:if="{{ leftArrow || leftText }}">
+      <sc-icon
+        wx:if="{{ leftArrow }}"
+        name="arrow"
+        custom-class="sc-nav-bar-arrow"
+      />
+      <view wx:if="{{ leftText }}" class="sc-nav-bar-text">{{ leftText }}</view>
+    </block>
+    <slot wx:else name="left" />
+  </view>
+  <view class="sc-nav-bar-title title-class sc-ellipsis">
+    <block wx:if="{{ title }}">{{ title }}</block>
+    <slot wx:else name="title" />
+  </view>
+  <view class="sc-nav-bar-right" bind:tap="onClickRight">
+    <view wx:if="{{ rightText }}" class="sc-nav-bar-text">{{ rightText }}</view>
+    <slot wx:else name="right" />
+  </view>
+</view>

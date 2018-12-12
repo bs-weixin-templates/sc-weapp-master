@@ -1,0 +1,31 @@
+<view
+  wx:if="{{ show }}"
+  class="custom-class sc-notice-bar {{ hasRightIcon ? 'sc-notice-bar-within-icon' : '' }}"
+  style="color: {{ color }};background-color: {{ backgroundColor }}"
+  bind:tap="onClick"
+>
+  <view wx:if="{{ leftIcon }}" class="sc-notice-bar-left-icon">
+    <image src="{{ leftIcon }}" />
+  </view>
+  <view class="sc-notice-bar-content-wrap">
+    <view class="sc-notice-bar-content" animation="{{ animationData }}">
+      {{ text }}
+    </view>
+  </view>
+
+  <block wx:if="{{ mode }}">
+    <sc-icon
+      wx:if="{{ mode === 'closeable' }}"
+      class="sc-notice-bar-right-icon"
+      name="close"
+      bind:tap="onClickIcon"
+    />
+    <navigator
+      wx:if="{{ mode === 'link' }}"
+      url="{{ url }}"
+      open-type="{{ openType }}"
+    >
+      <sc-icon class="sc-notice-bar-right-icon" name="arrow" />
+    </navigator>
+  </block>
+</view>

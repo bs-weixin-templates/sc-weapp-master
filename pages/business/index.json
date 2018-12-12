@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Sc Weapp",
+  "usingComponents": {
+
+    "sc-cell": "../../components/cell/index",
+    "sc-cell-group": "../../components/cell-group/index"
+  }
+}

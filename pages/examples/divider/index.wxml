@@ -1,0 +1,26 @@
+<view class="sc-divider-demo">
+    <view class="one-tag">基本用法</view>
+    <view class="sc-divider-demo-des">注: 如果同时存在slot和传递内容两个参数只有传递参数content生效</view>
+    <view class="sc-divider-mart">
+        <sc-divider content="加载已经完成,没有其他数据"></sc-divider>
+    </view>
+    <view class="sc-divider-mart">
+        <sc-divider content="加载已经完成,没有其他数据" color="#2d8cf0" lineColor="#2d8cf0"></sc-divider>
+    </view>
+    <view class="sc-divider-mart">
+        <sc-divider content="加载已经完成,没有其他数据" lineColor="#2d8cf0"></sc-divider>
+    </view>
+    <view class="sc-divider-mart">
+        <sc-divider content="加载已经完成,没有其他数据" color="#ed3f14" lineColor="#ed3f14"></sc-divider>
+    </view>
+    <view class="sc-divider-mart">
+        <sc-divider content="加载已经完成,没有其他数据" color="#ff9900" lineColor="#ff9900"></sc-divider>
+    </view>
+    <view class="one-tag">自定义内容</view>
+    <view class="sc-divider-mart">
+        <sc-divider  color="#2d8cf0" lineColor="#2d8cf0">加载已经完成,没有其他数据</sc-divider>
+    </view>
+    <view class="sc-divider-mart">
+        <sc-divider color="#ed3f14" lineColor="#ed3f14">加载已经完成,没有其他数据</sc-divider>
+    </view>
+</view>

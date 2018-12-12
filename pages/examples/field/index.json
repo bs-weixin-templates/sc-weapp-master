@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "field 输入框",
+	"usingComponents": {
+		"demo-block": "../../../../components/demo-block/index",
+		"sc-field": "../../../components/field/index",
+		"sc-button": "../../../components/button/index",
+		"sc-cell-group": "../../../components/cell-group/index"
+	}
+}

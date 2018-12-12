@@ -1,0 +1,26 @@
+<view class="sc-tabs sc-tabs-{{ type }}">
+  <view class="sc-tabs-wrap {{ scrollable ? 'sc-tabs-wrap-scrollable' : '' }} {{ type === 'line' ? 'sc-hairline-top-bottom' : '' }}">
+    <scroll-view
+      scroll-x="{{ scrollable }}"
+      scroll-with-animation
+      scroll-left="{{ scrollLeft }}"
+    >
+      <view class="sc-tabs-nav sc-tabs-nav-{{ type }}" style="{{ color ? 'border-color: ' + color : '' }}">
+        <view wx:if="{{ type === 'line' }}" class="sc-tabs__line" style="{{ lineStyle }}" />
+        <view
+          wx:for="{{ tabs }}"
+          wx:key="index"
+          data-index="{{ index }}"
+          class="sc-tab {{ index === active ? 'sc-tab-active' : '' }} {{ item.data.disabled ? 'sc-tab-disabled' : '' }}"
+          style="{{ color && !(index === active && type === 'card') && !item.data.disabled ? 'color: ' + color : '' }} {{ color && index === active && type === 'card' ? ';background-color:' + color : '' }} {{ color ? ';border-color: ' + color : '' }}"
+          bind:tap="onTap"
+        >
+          <view class="sc-ellipsis">{{ item.data.title }}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="sc-tabs-content">
+    <slot />
+  </view>
+</view>

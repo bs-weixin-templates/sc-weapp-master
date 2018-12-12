@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "sc-grid": "../grid/index",
+    "sc-grid-item": "../grid-item/index",
+    "sc-button": "../button/index",
+    "sc-icon": "../icon/index"
+  }
+}

@@ -1,0 +1,3 @@
+<view class="sc-sticky sc-class">
+    <slot></slot>
+</view>

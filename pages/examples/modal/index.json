@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Modal 对话框",
+  "usingComponents": {
+    "sc-modal": "../../../components/modal/index",
+    "sc-button": "../../../components/button/index"
+  }
+}

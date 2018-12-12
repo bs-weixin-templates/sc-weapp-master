@@ -1,0 +1,22 @@
+<view class="custom-class sc-card">
+  <view class="sc-card-thumb">
+    <image wx:if="{{ thumb }}" src="{{ thumb }}" class="sc-card-img thumb-class" />
+    <slot wx:else name="thumb" />
+  </view>
+  <view class="sc-card-content">
+    <view wx:if="{{ title || price || price === 0 }}" class="sc-card-row">
+      <view wx:if="{{ title }}" class="sc-card-title title-class">{{ title }}</view>
+      <view wx:if="{{ price || price === 0 }}" class="sc-card-price price-class">{{ currency }} {{ price }}</view>
+    </view>
+    <slot wx:else name="title" />
+    <view wx:if="{{ desc || num }}" class="sc-card-row">
+      <view wx:if="{{ desc }}" class="sc-card-desc desc-class">{{ desc }}</view>
+      <view wx:if="{{ num }}" class="sc-card-num num-class">x {{ num }}</view>
+    </view>
+    <slot wx:else name="desc" />
+    <slot name="tags" />
+  </view>
+  <view class="sc-card-footer">
+    <slot name="footer" />
+  </view>
+</view>

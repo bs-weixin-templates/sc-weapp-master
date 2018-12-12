@@ -1,0 +1,6 @@
+<sc-transition
+  show="{{ show }}"
+  custom-class="sc-overlay"
+  custom-style="z-index: {{ zIndex }}; {{ mask ? 'background-color: rgba(0, 0, 0, .7);' : '' }}; {{ customStyle }}"
+  bind:tap="onClick"
+/>

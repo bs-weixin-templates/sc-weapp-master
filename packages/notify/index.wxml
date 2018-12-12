@@ -1,0 +1,8 @@
+<sc-transition
+  name="slide-down"
+  show="{{ show }}"
+  custom-class="sc-notify"
+  custom-style="background-color:{{ backgroundColor }}"
+>
+  {{ text }}
+</sc-transition>

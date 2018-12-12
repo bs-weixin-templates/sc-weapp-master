@@ -1,0 +1,88 @@
+{
+    "pages": [
+        "pages/examples/index",
+        "pages/index/index",
+        "pages/business/index",
+        "pages/business/qrcode/index",
+        "pages/examples/layout/index",
+        "pages/examples/cell/index",
+        "pages/examples/refresher/index",
+        "pages/business/order/index",
+        "pages/examples/popup/index",
+        "pages/examples/radio/index",
+        "pages/examples/checkbox/index",
+        "pages/examples/keyboard/index",
+        "pages/examples/rate/index",
+        "pages/examples/field/index",
+        "pages/examples/grid/index",
+        "pages/examples/modal/index",
+        "pages/examples/button/index",
+        "pages/examples/collapse/index",
+        "pages/examples/badge/index",
+        "pages/examples/icon/index",
+        "pages/examples/loading/index",
+        "pages/examples/nav-bar/index",
+        "pages/examples/notice-bar/index",
+        "pages/examples/panel/index",
+        "pages/examples/progress/index",
+        "pages/examples/steps/index",
+        "pages/examples/tag/index",
+        "pages/examples/tab/index",
+        "pages/examples/tabbar/index",
+        "pages/examples/transition/index",
+        "pages/examples/search/index",
+        "pages/examples/switch/index",
+        "pages/examples/action-sheet/index",
+        "pages/examples/toast/index",
+        "pages/examples/notify/index",
+        "pages/examples/switch-cell/index",
+        "pages/examples/tree-select/index",
+        "pages/examples/card/index",
+        "pages/examples/slider/index",
+        "pages/examples/stepper/index",
+        "pages/examples/divider/index",
+        "pages/examples/load-more/index",
+        "pages/examples/page/index",
+        "pages/examples/sticky/index",
+        "pages/examples/swipeout/index",
+        "pages/examples/drawer/index",
+        "pages/examples/avatar/index",
+        "pages/examples/alert/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "微信接口功能演示",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "color": "#cacaca",
+        "selectedColor": "#f40",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "iconPath": "image/home.png",
+            "selectedIconPath": "image/home_hover.png",
+            "text": "首页"
+        }, {
+            "pagePath": "pages/business/index",
+            "iconPath": "image/cart.png",
+            "selectedIconPath": "image/cart_hover.png",
+            "text": "业务实例"
+        }, {
+            "pagePath": "pages/examples/index",
+            "iconPath": "image/cart.png",
+            "selectedIconPath": "image/cart_hover.png",
+            "text": "组件"
+        }]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

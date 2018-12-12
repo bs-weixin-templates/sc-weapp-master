@@ -1,0 +1,15 @@
+<view class="sc-class sc-alert {{'sc-alert-'+type}} {{showIcon?'sc-alert-with-icon':''}} {{desc?'sc-alert-with-desc':''}}" wx:if="{{!closed}}">
+    <view wx:if="{{ showIcon }}" class="sc-alert-icon">
+        <sc-icon type="prompt" wx:if="{{ type === 'info' }}" size="{{desc?24:16}}"></sc-icon>
+        <sc-icon type="success" wx:if="{{ type === 'success' }}" size="{{desc?24:16}}"></sc-icon>
+        <sc-icon type="warning" wx:if="{{ type === 'warning' }}" size="{{desc?24:16}}"></sc-icon>
+        <sc-icon type="delete" wx:if="{{ type === 'error' }}" size="{{desc?24:16}}"></sc-icon>
+    </view>
+    <slot></slot>
+    <view class="sc-alert-desc">
+        <slot name="desc"></slot>
+    </view>
+    <view class="sc-alert-close" wx:if="{{ closable }}" bindtap="handleTap">
+        <sc-icon type="close"></sc-icon>
+    </view>
+</view>

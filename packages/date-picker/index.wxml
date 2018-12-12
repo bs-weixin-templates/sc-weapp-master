@@ -1,0 +1,25 @@
+<view class='sc-date-picker'>
+<sc-popup
+    show="{{ showPop }}"
+    position="bottom"
+    custom-class="bottom"
+    bind:close="onPopupClose"
+  >
+  <view class="content">
+    <view class='header'>
+    <view bind:tap="reset">取消</view>
+     <view style="color:green;" bind:tap="handleConfirm">确定</view>
+    </view>
+    <view class='picker'>
+        <picker-view indicator-style="height: 50px;" style="width: 100%; height: 200px;" value="{{value}}" bind:change="onChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="{{years}}" style="line-height: 50px; text-align: center;">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="{{months}}" style="line-height: 50px; text-align: center;">{{item}}月</view>
+      </picker-view-column>
+    </picker-view>
+    </view>
+  </view>
+  </sc-popup>
+</view>

@@ -1,0 +1,43 @@
+<sc-popup
+  show="{{ show }}"
+  overlay="{{ overlay }}"
+  close-on-click-overlay="{{ closeOnClickOverlay }}"
+  custom-class="sc-dialog"
+  bind:close="onClickOverlay"
+>
+  <view wx:if="{{ title }}" class="sc-dialog-header {{ !message && !useSlot ? 'sc-dialog-isolated' : '' }}">
+    {{ title }}
+  </view>
+  <view class="sc-dialog-content" wx:if="{{ message || useSlot }}">
+    <slot wx:if="{{ useSlot }}" />
+    <view wx:elif="{{ message }}" class="sc-dialog-message {{ title ? 'sc-dialog-message-has-title' : '' }}">
+      {{ message }}
+    </view>
+  </view>
+  <view class="sc-hairline-top sc-dialog-footer {{ showCancelButton && showConfirmButton ? 'sc-dialog-footer-buttons' : '' }}">
+    <view wx:if="{{ showCancelButton }}" class="sc-dialog-button">
+      <sc-button
+        loading="{{ loading.cancel }}"
+        size="large"
+        custom-class="sc-dialog-cancel"
+        bind:click="onCancel"
+      >
+        {{ cancelButtonText }}
+      </sc-button>
+    </view>
+    <view
+      wx:if="{{ showConfirmButton }}"
+      class="sc-dialog-button {{ showCancelButton ? 'sc-hairline-left' : '' }}"
+    >
+      <sc-button
+        size="large"
+        loading="{{ loading.confirm }}"
+        custom-class="sc-dialog-confirm"
+        open-type="{{ confirmButtonOpenType }}"
+        bind:click="onConfirm"
+      >
+        {{ confirmButtonText }}
+      </sc-button>
+    </view>
+  </view>
+</sc-popup>

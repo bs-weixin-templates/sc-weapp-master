@@ -1,0 +1,31 @@
+<demo-block title="基础用法">
+  <sc-cell-group>
+    <sc-switch-cell
+      title="标题"
+      checked="{{ checked }}"
+      bind:change="onChange"
+    />
+  </sc-cell-group>
+</demo-block>
+
+<demo-block title="禁用状态">
+  <sc-cell-group>
+    <sc-switch-cell
+      disabled
+      title="标题"
+      checked="{{ checked }}"
+      bind:change="onChange"
+    />
+  </sc-cell-group>
+</demo-block>
+
+<demo-block title="加载状态">
+  <sc-cell-group>
+    <sc-switch-cell
+      loading
+      title="标题"
+      checked="{{ checked }}"
+      bind:change="onChange"
+    />
+  </sc-cell-group>
+</demo-block>

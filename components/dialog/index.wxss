@@ -1,0 +1,46 @@
+.sc-dialog {
+  width: 85%;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.sc-dialog-header {
+  padding: 15px 0 0;
+  text-align: center;
+}
+.sc-dialog-header-isolated {
+  padding: 25px 0;
+}
+.sc-dialog-message {
+  line-height: 1.5;
+  padding: 15px 20px;
+}
+.sc-dialog-message-has-title {
+  color: #999;
+  font-size: 14px;
+}
+.sc-dialog-footer {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+.sc-dialog-button {
+  flex: 1;
+}
+.sc-dialog-confirm,
+.sc-dialog-cancel {
+  border: 0 !important;
+}
+.sc-dialog-confirm,
+.sc-dialog-confirm:active {
+  color: #e8e8e8 !important;
+}
+.sc-dialog-bounce-enter {
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0) scale(0.7);
+}
+.sc-dialog-bounce-leave-active {
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0) scale(0.9);
+}

@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "Panel 面板",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-panel": "../../../components/panel/index",
+		"sc-button": "../../../components/button/index"
+	}
+}

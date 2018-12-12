@@ -1,0 +1,15 @@
+<view style="{{ style }}" bindtouchstart="bindtouchstart" bindtouchmove="bindtouchmove" bindtouchend="bindtouchend">
+    <view class="sc-refresher {{ className || 'hidden' }}">
+        <view class="sc-refresher-content {{ pullingText || refreshingText ? 'sc-refresher-content-text' : '' }}">
+            <view class="sc-refresher-icon-pulling {{ disablePullingRotation ? 'sc-refresher-icon-pulling-disabled' : '' }}">
+                <text class="{{ pullingIcon || 'sc-refresher-icon-arrow-down' }}"></text>
+            </view>
+            <view class="sc-refresher-text-pulling">{{ pullingText }}</view>
+            <view class="sc-refresher-icon-refreshing">
+                <text class="{{ refreshingIcon || 'sc-refresher-icon-refresher' }}"></text>
+            </view>
+            <view class="sc-refresher-text-refreshing">{{ refreshingText }}</view>
+        </view>
+    </view>
+    <slot></slot>
+</view>

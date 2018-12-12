@@ -1,0 +1,15 @@
+<sc-panel title="group-水果">
+    <sc-checkbox-group current="{{current}}" bindchange="handleFruitChange">
+        <sc-checkbox wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </sc-checkbox>
+    </sc-checkbox-group>
+</sc-panel>
+
+<sc-button bindclick="handleClick" type="ghost">切换复选框位置</sc-button>
+
+<sc-panel title="checkbox-动物">
+    <sc-checkbox value="{{animal}}" disabled="{{disabled}}" checked="{{checked}}" bindchange="handleAnimalChange">
+    </sc-checkbox>
+</sc-panel>
+
+<sc-button bindclick="handleDisabled" type="ghost">切换disabled状态</sc-button>

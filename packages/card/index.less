@@ -1,0 +1,91 @@
+@import '../styles/index.less';
+@import '../styles/mixins/ellipsis.less';
+.sc-card {
+  color: @sc-text-color;
+  height: 100px;
+  font-size: 16px;
+  background: @sc-background-color;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 15px 5px 115px;
+
+  &-center,
+  &-thumb {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-thumb {
+    top: 5px;
+    left: 15px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+  }
+
+  &-img {
+    border: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &,
+  &-thumb,
+  &-row {
+    display: flex;
+  }
+
+  &-content {
+    width: 100%;
+
+    &-center {
+      height: 90px;
+      align-items: center;
+    }
+  }
+
+  &-title,
+  &-desc {
+    line-height: 20px;
+    word-break: break-all;
+  }
+
+  &-title {
+    max-height: 40px;
+    .multi-ellipsis(2);
+  }
+
+  &-desc {
+    color: @sc-gray-darker;
+    font-size: 12px;
+    max-height: 20px;
+    .ellipsis();
+  }
+
+  &-price,
+  &-num {
+    flex: 1;
+    min-width: 80px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  &-price {
+    font-size: 14px;
+  }
+
+  &-num {
+    color: @sc-gray-darker;
+    font-size: 12px;
+  }
+
+  &-footer {
+    right: 15px;
+    bottom: 5px;
+    position: absolute;
+
+    .sc-button {
+      margin-left: 5px;
+    }
+  }
+}

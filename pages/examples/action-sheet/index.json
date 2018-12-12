@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "ActionSheet 上拉菜单",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-action-sheet": "../../../components/action-sheet/index",
+		"sc-button": "../../../components/button/index"
+	}
+}

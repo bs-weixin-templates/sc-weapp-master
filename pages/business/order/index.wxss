@@ -1,0 +1,98 @@
+
+.sc-form-preview {
+	position: relative;
+	background-color: #fff
+}
+
+.sc-form-preview:before {
+	top: 0;
+	border-top: 1rpx solid #d9d9d9
+}
+
+.sc-form-preview:after,.sc-form-preview:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1px;
+	color: #d9d9d9
+}
+
+.sc-form-preview:after {
+	bottom: 0;
+	border-bottom: 1rpx solid #d9d9d9
+}
+
+.sc-form-preview-value {
+	font-size: 14px
+}
+
+.sc-form-preview-value-in-hd {
+	font-size: 26px
+}
+
+.sc-form-preview-hd {
+	position: relative;
+	padding: 10px 15px;
+	text-align: right;
+	line-height: 2.5em
+}
+
+.sc-form-preview-hd:after {
+	content: " ";
+	position: absolute;
+
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	border-bottom: 1rpx solid #d9d9d9;
+	color: #d9d9d9;
+	left: 15px;
+}
+
+.sc-form-preview-bd {
+	padding: 10px 15px;
+	font-size: .9em;
+	text-align: right;
+	color: #999;
+	line-height: 2
+}
+
+.sc-form-preview-ft {
+	position: relative;
+	padding: 10px 15px;
+  text-align: center;
+}
+
+.sc-form-preview-ft:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1rpx solid #d5d5d6;
+	color: #d5d5d6
+}
+
+.sc-form-preview-item {
+	overflow: hidden
+}
+
+.sc-form-preview-label {
+	float: left;
+	margin-right: 1em;
+	min-width: 4em;
+	color: #999;
+	text-align: justify;
+	text-align-last: justify
+}
+
+.sc-form-preview-value {
+	display: block;
+	overflow: hidden;
+	word-break: normal;
+	word-wrap: break-word
+}
+
+

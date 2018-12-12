@@ -1,0 +1,19 @@
+<view class="sc-panel sc-hairline-top-bottom custom-class">
+  <sc-cell 
+    wx:if="{{ title || desc || status }}"
+    title="{{ title }}"
+    label="{{ desc }}"
+    value="{{ status }}"
+    custom-class="{{ headerClass }}"
+    value-class="sc-panel-header-value"
+  />
+  <slot wx:else name="header" />
+
+  <view class="sc-panel-content">
+    <slot />
+  </view>
+
+  <view wx:if="{{ useFooterSlot }}" class="sc-panel-footer sc-hairline-top footer-class">
+    <slot name="footer" />
+  </view>
+</view>

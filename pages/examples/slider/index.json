@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "Slider 滑块",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-slider": "../../../components/slider/index"
+	}
+}

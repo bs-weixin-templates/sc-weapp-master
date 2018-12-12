@@ -1,0 +1,14 @@
+.demo-block-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1c2438;
+  opacity: 0.6;
+  padding: 20px 15px 15px;
+}
+.demo-block-padding {
+  padding: 0 15px 0 0;
+}
+.demo-block-title {
+  padding-left: 0;
+}

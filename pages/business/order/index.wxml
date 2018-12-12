@@ -1,0 +1,26 @@
+<view class="page">
+ 
+    <view class="page-bd">
+        <view class="sc-form-preview">
+           
+            <view class="sc-form-preview-bd">
+                <view class="sc-form-preview-item">
+                    <view class="sc-form-preview-label">商品</view>
+                    <view class="sc-form-preview-value">电动打蛋机</view>
+                </view>
+                <view class="sc-form-preview-item">
+                    <view class="sc-form-preview-label">标题标题</view>
+                    <view class="sc-form-preview-value">名字名字名字</view>
+                </view>
+                <view class="sc-form-preview-item">
+                    <view class="sc-form-preview-label">标题标题</view>
+                    <view class="sc-form-preview-value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
+                </view>
+            </view>
+            <view class="sc-form-preview-ft">
+         <sc-button size="large"  type="primary" block custom-class="demo-margin-bottom">支付</sc-button>
+            </view>
+        </view>
+      
+    </view>
+</view>

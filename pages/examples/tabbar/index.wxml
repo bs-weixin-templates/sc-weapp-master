@@ -1,0 +1,20 @@
+<demo-block title="基础用法">
+  <sc-tabbar active="{{ active }}" custom-class="tabbar" bind:change="onChange">
+    <sc-tabbar-item icon="shop">标签</sc-tabbar-item>
+    <sc-tabbar-item icon="chat" dot>标签</sc-tabbar-item>
+    <sc-tabbar-item icon="records" info="5">标签</sc-tabbar-item>
+    <sc-tabbar-item icon="gold-coin" info="20">标签</sc-tabbar-item>
+  </sc-tabbar>
+</demo-block>
+
+<demo-block title="自定义图标">
+  <sc-tabbar active="{{ active2 }}" custom-class="tabbar" bind:change="onChange">
+    <sc-tabbar-item>
+      <span>自定义</span>
+      <image slot="icon" src="{{ icon.normal }}" class="icon" mode="aspectFit" />
+      <image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" />
+    </sc-tabbar-item>
+    <sc-tabbar-item icon="chat">标签</sc-tabbar-item>
+    <sc-tabbar-item icon="records">标签</sc-tabbar-item>
+  </sc-tabbar>
+</demo-block>

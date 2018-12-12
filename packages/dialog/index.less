@@ -1,0 +1,61 @@
+@import '../styles/index.less';
+
+
+.sc-dialog {
+  width: 85%;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: @sc-white;
+
+  &-header {
+    padding: 15px 0 0;
+    text-align: center;
+
+    &-isolated {
+      padding: 25px 0;
+    }
+  }
+
+  &-message {
+    line-height: 1.5;
+    padding: 15px 20px;
+
+    &-has-title {
+      color: @sc-gray-dark;
+      font-size: 14px;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  &-button {
+    flex: 1;
+  }
+
+  &-confirm,
+  &-cancel {
+    border: 0 !important;
+  }
+
+  &-confirm {
+    &,
+    &:active {
+      color: @sc-active-color !important;
+    }
+  }
+
+  &-bounce-enter {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
+
+  &-bounce-leave-active {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.9);
+  }
+}

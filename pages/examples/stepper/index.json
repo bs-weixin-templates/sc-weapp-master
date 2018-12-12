@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "Stepper 步进器",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-stepper": "../../../components/stepper/index",
+		"sc-panel": "../../../components/panel/index"
+	}
+}

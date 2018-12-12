@@ -1,0 +1,9 @@
+{
+	"component": true,
+	"usingComponents": {
+		"demo-block": "../../../../components/demo-block/index",
+
+		"sc-keyboard": "../../../components/keyboard/index",
+		"sc-button": "../../../components/button/index"
+	}
+}

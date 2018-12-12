@@ -1,0 +1,31 @@
+<sc-popup show="{{show}}"  position="bottom"
+    custom-class="bottom"
+    bind:close="toggleBottomPopup">
+    
+    <view class="sc-keyboard-bd">
+        <block wx:for="{{ keys }}" wx:key="">
+            <view class="sc-keyboard-label">
+                <view class="sc-keyboard-password {{ value.length >= (index + 1) ? 'sc-keyboard-password-active' : '' }}"></view>
+            </view>
+        </block>
+    </view>
+    <view class="sc-keyboard-ft">
+        <view class="sc-keyboard-numbers">
+            <block wx:for="{{ nums }}" wx:for-item="n" wx:key="">
+                <view class="sc-keyboard-number" wx:if="{{ index === 3 }}">
+                    <view class="sc-keyboard-text" hover-class="sc-keyboard-text-hover" hover-start-time="20" hover-stay-time="170" wx:if="{{ showCancel }}" bindtap="hide">{{ cancelText }}</view>
+                    <view class="sc-keyboard-text" hover-class="sc-keyboard-text-hover" hover-start-time="20" hover-stay-time="170" wx:else></view>
+                    <block wx:for="{{ n }}" wx:for-item="m" wx:key="">
+                        <view class="sc-keyboard-text" hover-class="sc-keyboard-text-hover" hover-start-time="20" hover-stay-time="170" data-value="{{ m }}" bindtap="increase">{{ m }}</view>
+                    </block>
+                    <view class="sc-keyboard-text" bindtap="decrease">×</view>
+                </view>
+                <view class="sc-keyboard-number" wx:else>
+                    <block wx:for="{{ n }}" wx:for-item="m" wx:key="">
+                        <view class="sc-keyboard-text" hover-class="sc-keyboard-text-hover" hover-start-time="20" hover-stay-time="170" data-value="{{ m }}" bindtap="increase">{{ m }}</view>
+                    </block>
+                </view>
+            </block>
+        </view>
+    </view>
+</sc-popup>

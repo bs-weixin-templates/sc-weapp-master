@@ -1,0 +1,24 @@
+.sc-collapse-item {
+  padding: 2px 8px;
+  border-top: 1px solid #e5e5e5;
+}
+.sc-collapse-item-title {
+  vertical-align: middle;
+}
+.sc-collapse-item-title-wrap {
+  padding: 2px 0 0;
+}
+.sc-collapse-item-content {
+  padding: 6px;
+  display: none;
+}
+.sc-collapse-item-show-content {
+  display: block;
+}
+.sc-collapse-item-arrow {
+  transition: transform 0.2s ease-in-out;
+}
+.sc-collapse-item-arrow-show {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(90deg);
+}

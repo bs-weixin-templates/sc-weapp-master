@@ -1,0 +1,14 @@
+<sc-overlay
+  mask
+  show="{{ overlay && show }}"
+  custom-style="{{ overlayStyle }}"
+  bind:click="onClickOverlay"
+/>
+<view
+  wx:if="{{ inited }}"
+  class="custom-class sc-popup {{ position ? 'sc-popup-' + position : '' }}"
+  style="animation-name: sc-{{ position }}-{{ type }}; animation-duration: {{ duration }}ms; {{ display ? '' : 'display: none;' }}"
+  bind:animationend="onAnimationEnd"
+>
+  <slot />
+</view>

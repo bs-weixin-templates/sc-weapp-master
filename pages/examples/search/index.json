@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "Search 搜索",
+	"usingComponents": {
+		"demo-block": "../../../components/demo-block/index",
+		"sc-search": "../../../components/search/index"
+	}
+}

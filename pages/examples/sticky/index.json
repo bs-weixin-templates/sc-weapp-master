@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "Sticky 吸顶容器",
+	"usingComponents": {
+		"sc-sticky": "../../../components/sticky/index",
+		"sc-sticky-item": "../../../components/sticky-item/index"
+	}
+}

@@ -1,0 +1,88 @@
+<demo-block title="基础用法" padding>
+
+        <sc-grid>
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+        </sc-grid>
+        <view class="sub-title">Square = true</view>
+        <sc-grid square>
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+        </sc-grid>
+        <view class="sub-title">Bordered = false</view>
+        <sc-grid bordered="{{ false }}">
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+        </sc-grid>
+        <view class="sub-title">Col = 4</view>
+        <sc-grid col="4">
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+            <sc-grid-item thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" label="Sc Weapp" />
+        </sc-grid>
+        <view class="sub-title">Custom content</view>
+        <sc-grid>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+            <sc-grid-item>
+                <wux-icon type="logo-github" />
+                <view>Sc Weapp</view>
+            </sc-grid-item>
+        </sc-grid>
+</demo-block>

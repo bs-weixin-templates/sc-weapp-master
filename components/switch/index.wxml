@@ -1,0 +1,9 @@
+<view
+  class="sc-switch custom-class {{ checked ? 'sc-switch-on' : '' }} {{ disabled ? 'sc-switch-disabled' : '' }}"
+  style="font-size: {{ size }};"
+  bind:tap="onClick"
+>
+  <view class="sc-switch-node node-class">
+    <sc-loading wx:if="{{ loading }}" size="50%" custom-class="sc-switch-loading" />
+  </view>
+</view>

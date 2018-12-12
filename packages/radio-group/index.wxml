@@ -1,0 +1,3 @@
+<sc-cell-group class="sc-class">
+    <slot></slot>
+</sc-cell-group>

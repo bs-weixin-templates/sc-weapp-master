@@ -1,0 +1,17 @@
+<demo-block title="基础用法" padding>
+  <sc-cell title="Fade" bind:click="onClickFade" is-link />
+  <sc-cell title="Fade Up" bind:click="onClickFadeUp" is-link />
+  <sc-cell title="Fade Down" bind:click="onClickFadeDown" is-link />
+  <sc-cell title="Fade Left" bind:click="onClickFadeLeft" is-link />
+  <sc-cell title="Fade Right" bind:click="onClickFadeRight" is-link />
+  <sc-cell title="Slide Up" bind:click="onClickSlideUp" is-link />
+  <sc-cell title="Slide Down" bind:click="onClickSlideDown" is-link />
+  <sc-cell title="Slide Left" bind:click="onClickSlideLeft" is-link />
+  <sc-cell title="Slide Right" bind:click="onClickSlideRight" is-link />
+
+  <sc-transition
+    show="{{ show }}"
+    name="{{ name }}"
+    custom-class="block"
+  />
+</demo-block>

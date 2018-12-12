@@ -1,0 +1,21 @@
+<view class="sc-class sc-grid-item {{ bordered ? 'sc-grid-item-bordered' : '' }} {{ square ? 'sc-grid-item-square' : '' }}" hover-class="sc-grid-item-hover" style="width: {{ width }}" bindtap="onTap">
+    <view class="sc-grid-item-content">
+      <block wx:if="{{thumb}}">
+        <view class="sc-grid-item-inner">
+            <view class="sc-grid-item-hd">
+                <image class="sc-grid-item-thumb" src="{{ thumb }}" wx:if="{{ thumb }}" />
+                <block wx:else>
+                    <slot name="header"></slot>
+                </block>
+            </view>
+            <view class="sc-grid-item-bd">
+                <view class="sc-grid-item-label" wx:if="{{ label }}">{{ label }}</view>
+                <slot></slot>
+            </view>
+        </view>
+       </block>
+            <block wx:else>
+  <slot></slot>
+            </block>
+    </view>
+</view>

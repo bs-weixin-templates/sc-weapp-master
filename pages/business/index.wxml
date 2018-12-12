@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="title">
+    <view class="title-text">SC Weapp</view>
+  </view>
+  <view class="desc">轻量、可靠的小程序 UI 组件库</view>
+
+  <block wx:for="{{ list }}" wx:for-item="group" wx:key="group.title">
+    <view class="mobile-nav">
+      <view class="mobile-nav__title">{{ group.groupName }}</view>
+      <cell>
+        <cell-group
+          wx:for="{{ group.list }}"
+          wx:key="item.title"
+          is-link
+          title-width="200px"
+          url="/pages{{ item.path }}/index"
+          title="{{ item.title }}"
+        ></cell-group>
+      </cell>
+    </view>
+  </block>
+</view>

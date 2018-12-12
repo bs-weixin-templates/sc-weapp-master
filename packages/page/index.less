@@ -1,0 +1,53 @@
+@import '../styles/index.less';
+.sc-page{
+    display: block;
+    width: 100%;
+    height: @sc-height-base;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+
+    &-prev{
+        position: absolute;
+        left: 10px;
+        top: 0;
+    }
+    &-next{
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    &-number{
+        width: 100%;
+        height: @sc-height-base;
+        line-height: @sc-height-base;
+        margin: 0 auto;
+        text-align: center;
+        &-current{
+            display: inline;
+            color: @sc-primary-color;
+        }
+    }
+    &-pointer{
+        width: 100%;
+        height: @sc-height-base;
+        line-height: @sc-height-base;
+        margin: 0 auto;
+        text-align: center;
+        &-dot{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0 2px;
+            border-radius: 50%;
+            background: @sc-btn-disable-color;
+            &.current{
+                background: @sc-active-color;
+            }
+        }
+    }
+    &-button{
+        display: inline-block;
+        margin: 0;
+    }
+}
